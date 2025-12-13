@@ -17,7 +17,7 @@ CHUNK_SIZE = 1000
 OVERLAP = 100
 
 # SAFETY LOCK: Only process 20 talks first to save your $5 budget! [cite: 36, 39]
-LIMIT_TALKS = 20  # Set to None only when ready for the full upload
+LIMIT_TALKS = None  # Set to None only when ready for the full upload
 
 # --- 2. SETUP CLIENTS ---
 # We use base_url to point to the university platform instead of OpenAI directly
