@@ -31,11 +31,11 @@ transcript or metadata when helpful."""
 def get_clients():
     # Connect to University Platform
     client = OpenAI(
-        api_key=os.environ.get("LLMOD_API_KEY"), 
+        api_key="sk-1vIyOeEpvInlyU9A_E00Yw",  #os.environ.get("LLMOD_API_KEY")
         base_url="https://api.llmod.ai" 
     )
     # Connect to Pinecone
-    pc = Pinecone(api_key=os.environ.get("PINECONE_API_KEY"))
+    pc = Pinecone(api_key="pcsk_ntSQX_QeSYankVgWL9DX2v33d4Eq7qNUsDmQGe8ER6i8RdsFZV1UM8erK9TLej5bVncz2") #os.environ.get("PINECONE_API_KEY")
     index = pc.Index("ted-rag")
     return client, index
 
