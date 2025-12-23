@@ -31,7 +31,7 @@ transcript or metadata when helpful."""
 def get_clients():
     # Connect to University Platform
     client = OpenAI(
-        api_key=os.environ.get("LLMOD_API_KEY"),  #os.environ.get("LLMOD_API_KEY")
+        api_key=os.environ.get("MY_NEW_LLMOD_KEY"),  #os.environ.get("LLMOD_API_KEY")
         base_url="https://api.llmod.ai" 
     )
     # Connect to Pinecone
